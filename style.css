@@ -1,0 +1,90 @@
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+header{
+    background-color: rgba(255, 144, 14, 0.10);
+    /* width: 1920px; */
+ /* height: 160vh; */
+ padding: 50px 240px;
+}
+nav{
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    gap: 3rem;
+}
+nav ul li {
+    list-style: none;
+}
+.nav-title{
+    color: #131313;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+nav ul li a{
+    color: #424242;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.banner-contant{
+    text-align: center;
+    /* padding: 0 529px; */
+    max-width: 750px;
+    margin: 0 auto;
+    /* padding-bottom: 20px; */
+   
+}
+.banner-title{
+    
+    font-size: 3.9rem;
+    font-weight: 700;
+    /* margin-top: 5rem; */
+}
+.banner-description{
+    font-weight: 400;
+    font-size: 1rem;
+    /* margin-bottom: 5rem; */
+    margin-bottom: 20px;
+    
+}
+.btn{
+    color: #FFF;
+    background-color: #FF900E;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.banner-photo{
+    width: 100%;
+    margin-top: 1rem;
+}
+
+
+@media  screen and (max-width: 576px) {
+    header{
+        padding: 20px;
+        
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    .banner-title{
+        font-size: 1.5rem;
+    }
+    
+}
+@media  screen and (min-width: 576px) and (max-width:992px) {
+    header{
+        padding: 50px;
+    }
+    nav{
+        
+        flex-direction: column;
+    }
+}
