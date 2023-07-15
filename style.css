@@ -44,7 +44,7 @@ nav ul li a{
     font-weight: 700;
     /* margin-top: 5rem; */
 }
-.banner-description{
+.text-color{
     font-weight: 400;
     font-size: 1rem;
     /* margin-bottom: 5rem; */
@@ -56,19 +56,43 @@ nav ul li a{
     background-color: #FF900E;
     border-radius: 0.5rem;
     padding: 1rem;
+    border: none;
 }
 .banner-photo{
     width: 100%;
     margin-top: 1rem;
 }
-
+.feature-container{
+    padding: 50px 220px;
+    /* margin: 70px auto; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-right: 2rem;
+    gap: 1rem;
+    border-radius: 8px;
+}
+.feature-title{
+    font-weight: 500;
+    font-size: 2.8rem;
+}
+.span-gray{
+    color: #727272;
+}
+.span-orange{
+    color: #FF900E;
+}
 
 @media  screen and (max-width: 576px) {
     header{
         padding: 20px;
         
     }
-    nav{
+    nav, .feature-container{
         flex-direction: column;
     }
     nav ul{
@@ -76,6 +100,9 @@ nav ul li a{
     }
     .banner-title{
         font-size: 1.5rem;
+    }
+    .team-container{
+        grid-template-columns: repeat(1, 1fr);
     }
     
 }
