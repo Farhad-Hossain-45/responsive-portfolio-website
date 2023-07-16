@@ -123,7 +123,20 @@ main{
     font-size: 1.1rem;
     margin-bottom: 10px;
 }
-
+.experiace{
+    width: 230px;
+height: 120px;
+background-color: #FF900E;
+position: relative;
+bottom: 3.5rem;
+border-radius: 0.5rem;
+padding: 1.5rem;
+margin-left: 2rem;
+}
+.experiace-title{
+    font-size: 2rem;
+    color: white;
+}
 
 
 
