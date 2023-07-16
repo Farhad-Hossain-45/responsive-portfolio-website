@@ -137,7 +137,27 @@ margin-left: 2rem;
     font-size: 2rem;
     color: white;
 }
-
+.fact-title{
+    font-weight: 700;
+    font-size: 2.6rem;
+    color: #131313;
+    margin-bottom: 0.5rem;
+}
+.facts-contant{
+    padding: 2rem 0;
+}
+.fact-card-container{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    width: 210px;
+height: 210px;
+border-radius: 8px;
+border: 1px solid #FF900E;
+text-align: center;
+padding: 3rem 0;
+}
 
 
 
@@ -146,23 +166,31 @@ margin-left: 2rem;
         padding: 20px;
         
     }
-    nav, .feature-container, .love-container{
+    nav, .feature-container, .love-container,.fact-card-container{
         flex-direction: column;
     }
     nav ul{
         flex-direction: column;
+        gap: 1rem;
+        margin-top: 1rem;
+        
     }
     .banner-title{
         font-size: 1.5rem;
     }
     .team-container{
         grid-template-columns: repeat(1, 1fr);
+       margin-left: 25px;
     }
     main {
         padding: 20px;
     }
     .love-photo{
         max-width: 100%;
+    }
+    .fact-card-container{
+        margin-left: 50px;
+        gap: 1rem;
     }
 }
 @media  screen and (min-width: 576px) and (max-width:992px) {
@@ -178,5 +206,8 @@ margin-left: 2rem;
     }
     .love-photo{
         max-width: 100%;
+    }
+    .fact-card-container{
+        gap: 0.5rem;
     }
 }
