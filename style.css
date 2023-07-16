@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Work Sans', sans-serif;
 }
@@ -34,7 +39,7 @@ nav ul li a{
     text-align: center;
     /* padding: 0 529px; */
     max-width: 750px;
-    margin: 0 auto;
+    margin: 100px auto 0 auto;
     /* padding-bottom: 20px; */
    
 }
@@ -62,8 +67,11 @@ nav ul li a{
     width: 100%;
     margin-top: 1rem;
 }
-.feature-container{
+main{
     padding: 50px 220px;
+}
+.feature-container{
+   
     /* margin: 70px auto; */
     display: flex;
     justify-content: space-between;
@@ -104,13 +112,16 @@ nav ul li a{
     .team-container{
         grid-template-columns: repeat(1, 1fr);
     }
+    main {
+        padding: 20px;
+    }
     
 }
 @media  screen and (min-width: 576px) and (max-width:992px) {
-    header{
-        padding: 50px;
+    header,main{
+        padding: 20px;
     }
-    nav{
+    nav, .feature-container{
         
         flex-direction: column;
     }
